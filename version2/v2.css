@@ -3,17 +3,27 @@ body {
   padding: 0;
   font-family: "Playwrite AU VIC", cursive;
   background-color: rgb(42, 16, 145);
-  text-align: center;
-  align-items: center;
 }
 
-h1, h2, h3, h4 {
+.myTable {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.books {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1, h2, h3 {
   text-align: center;
   color: white;
 }
 
 h1, th {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 h2 {
@@ -24,27 +34,28 @@ h3 {
   font-size: 20px;
 }
 
+.addOrDelete {
+  display: grid;
+  justify-content: center;
+}
+
 button {
-  font-size: 16px;
+  font-size: 20px;
   text-decoration: none;
   font-family: "Playwrite AU VIC", cursive;
   font-weight: bold;
   border: 5px double black;
-  border-radius: 3px;
 }
 
 button:hover {
   text-decoration: underline;
-  background-color: rgb(248, 103, 103);
+  background-color: black;
   color: white;
-  border: 5px double rgb(50, 241, 36);
+  border: 5px double yellow;
 }
 
 table {
-  display: flex-box;
-  margin: auto;
-  border-spacing: 30px;
   color: white;
-} 
-
+  padding: 50px 50px;
+}
 

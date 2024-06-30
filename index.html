@@ -12,32 +12,34 @@
 <body>
 <div class="library">
   <h1>Welcome to my library!</h1>
+</div>
   <hr />
-    <div class="books">
-      <h2>I have some exciting books for you to explore.</h2>
-      <h3>Book Listing</h3>
-    <table>
-      <tr>
-          <th>Title</th>
-          <th>Author</th>
-          <th>Pages</th>
-        </tr>
-        <tr>
-          <td>The Shining</td>
-          <td>Stephen King</td>
-          <td>447</td>
-        </tr>
-         <tr>
-          <td>Where the Crawdads Sing</td>
-          <td>Delia Owens</td>
-          <td>368</td>
-        </tr>
-      </table>
-    </div>
+  <div class="intro">
+    <h2>I have some exciting books for you to explore.</h2>
+    <h3>Current Library Books</h3>
   </div>
-  <div class="addOrDelete">
-    <button onclick="myAddFunction()">ADD</button>
-    <button onclick="myDeleteFunction()">DELETE</button>
+  <table id="myTable">
+    <thead>
+      <td>Title</td>
+      <td>Author</td>
+      <td>Pages</td>
+    </thead>
+    <tr>
+      <td>The Shining</td>
+      <td>Stephen King</td>
+      <td>447</td>
+      <td><button onclick="myDeleteFunction()">Delete Book</button></td>
+    </tr>
+    <tr>
+      <td>Where the Crawdads Sing</td>
+      <td>Delia Owens</td>
+      <td>368</td>
+      <td><button onclick="myDeleteFunction()">Delete Book</button></td>
+    </tr>  
+  </table>
+  <div class="addBook">
+    <h4>You may add a new book to this library</h4>
+    <button id="addBtn" onclick="myAddFunction()">Add Book</button>
   </div>
   <script src="index.js"></script>
 </body>
