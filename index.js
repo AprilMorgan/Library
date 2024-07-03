@@ -8,21 +8,19 @@ function Book(title, author, pages, read) {
   }
 
 function myDeleteFunction() {
-  document.getElementById("myTable").deleteRow(1);
+  document.getElementById("myTable").deleteRow(0);
 }
 
 function myAddFunction() {
-  document.getElementById("myTable").addRow(0);
-  newCell = newRow.insertCell();
-  
+  document.getElementById("addBtn").addRow();
 }
 
-const myAddFunction () {
-  title = prompt("Enter Book Title")
-  author = prompt("What is author's name?");
-  pages = prompt("How many pages?");
-  read = prompt("Have you read this book?");
-}
+// const myAddFunction ("addBook") {
+//   title = prompt("Enter Book Title")
+//   author = prompt("What is author's name?");
+//   pages = prompt("How many pages?");
+//   read = prompt("Have you read this book?");
+// }
 
 
 
