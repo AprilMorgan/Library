@@ -19,28 +19,28 @@
     <h3>Current Library Books</h3>
   </div>
   <table id="myTable">
-    <thead>
-      <td>Title</td>
-      <td>Author</td>
-      <td>Pages</td>
-    </thead>
-    <tbody id="tBody">
-      <tr>
-        <td>The Shining</td>
-        <td>Stephen King</td>
-        <td>447</td>
-        <td><button type="button" class="myDeleteFunction()">Delete Book</button></td>
-      </tr>
-      <tr>
-        <td>Where the Crawdads Sing</td>
-        <td>Delia Owens</td>
-        <td>368</td>
-        <td><button type="button"  class="myDeleteFunction()">Delete Book</button></td>
-      </tr>  
-    </tbody>
-    </div>
-    </div>
-    
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Pages</th>
+    </tr>
+    <tr>
+      <td>The Shining</td>
+      <td>Stephen King</td>
+      <td>447</td>
+      <td><button type="button" onclick="myDeleteFunction()">Delete Book</button></td>
+    </tr>
+    <tr>
+      <td>Where the Crawdads Sing</td>
+      <td>Delia Owens</td>
+      <td>368</td>
+      <td><button type="button" onclick="myDeleteFunction()">Delete Book</button></td>
+    </tr>
+    <tr>
+      <td id="title"></td>
+      <td id="author"></td>
+      <td id="pages"></td>
+    </tr>
   </table>
   <div class="addBook">
     <h4>You may add a new book to this library</h4>

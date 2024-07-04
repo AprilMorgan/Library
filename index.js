@@ -1,6 +1,6 @@
 const myLibrary = [];
 
-function Book(title, author, pages, read) {
+function Book() {
     this.title = title;
     this.author = author;
     this.pages = pages;
@@ -8,21 +8,16 @@ function Book(title, author, pages, read) {
   }
 
 function myDeleteFunction() {
-  document.getElementById("myTable").deleteRow(0);
+  document.getElementById("myTable").deleteRow(1); 
 }
 
-function myAddFunction() {
-  document.getElementById("addBtn").addRow();
-}
+const title = document.getElementById("title");
+title.innerHTML = prompt("Enter Book Title");
 
-// const myAddFunction ("addBook") {
-//   title = prompt("Enter Book Title")
-//   author = prompt("What is author's name?");
-//   pages = prompt("How many pages?");
-//   read = prompt("Have you read this book?");
-// }
+const author = document.getElementById("author");
+title.innerHTML = prompt("What is author's name?");
 
-
-
+const pages = document.getElementById("author");
+pages.innerHTML = prompt("How many pages?");
 
 
